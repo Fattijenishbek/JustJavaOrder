@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the plus button is clicked.
      */
-    public void increment(View view) {
+    private void increment(View view) {
         if(numberOfCoffees==100){
             Toast.makeText(this,"You cannot have more than 100 cup", Toast.LENGTH_SHORT).show();
             return;
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the minus button is clicked.
      */
-    public void decrement(View view) {
+    private void decrement(View view) {
         if(numberOfCoffees==1){
             Toast.makeText(this,"You cannot order less than 1 cup", Toast.LENGTH_SHORT).show();
             return;
